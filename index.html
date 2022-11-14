@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Montserrat&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Página de tributo </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+</head>
+<body>
+<header id="header">
+    <h1> Star Wars </h1>
+    <p>La saga Skywalker</p>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="#">Página 2</a></li>
+        <li><a href="#">Página 3</a></li>
+        <li class="menu__hamburger-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <h2>Sitios para conocer más de Star Wars</h2>
+        <ul>
+            <li><a href="https://www.starwars.com" target="_blank">Sitio oficial de Star Wars</a></li>
+            <br>
+            <li><a href="https://starwars.fandom.com/es/wiki/Portada" target="_blank">Star Wars Wiki | Fandom</a></li>
+            <br>
+            <li><a href="https://www.starwarsnewsnet.com" target="_blank">Star Wars News Net</a></li>
+            <br>
+            <li><a href="https://www.starwarskids.com" target="_blank">Stio oficial de Star Wars para niños</a></li>
+            <br>
+            <li><a href="https://www.disneyplus.com/en-mx" target="_blank">Disney +</a></li>
+        </ul>
+    </aside>
+    <section id="main-content">
+        <img src="foto-star-wars.png" alt="Foto star wars" class="main-content__img--full-width">
+
+        <h2>Información</h2>
+        <p>La saga de Star Wars, también llamada la saga Skywalker, es el conjunto de películas de Star Wars que se empezaron a estrenar
+            desde 1977 con Star Wars: A New Hope. Las otras películas giran alrededor de esta película, de la familia Skywalker y de los 
+            Jedi y cuentan sobre la historia de 3 generaciones diferentes de la familia. La trilogía de precuelas tratan sobre Anakin 
+            Skywalker, Obi-Wan Kenobi y Padmé Amidala y las películas salieron desde 1999 hasta el 2005. La trilogía original trata sobre 
+            Luke Skywalker, Leia Organa (quien es la hermana de Luke) y de Han Solo. Esta trilogía salió de 1977 hasta 1983. Finalmente, 
+            salieron las secuelas que tratan sobre Ben Solo (también conocido como Kylo Ren), Rey, Finn y Poe Dameron y estas películas 
+            salieron del 2015 hasta el 2019. 
+        </p>
+        <p>A parte de las películas, también salieron series complementarias a las películas, como “The Clone Wars” y “Star Wars Rebels”. 
+            También hay varios libros y cómics que explican más sobre la historia de los Jedi. 
+        </p>
+
+        <h2>¿Qué son los Jedi?</h2>
+        <p>Un Jedi es un individuo que es sensible a la Fuerza (un misterioso campo de energía que permita que alguien tenga habilidades 
+            especiales). Normalmente estos seres perteneces a la Orden Jedi, sin embargo, este orden eventualmente se destruyó a causa de 
+            las Guerras Clon. Las personas de la Orden Jedi pertenecían al lado luminoso de la Fuerza. Los que pertenecían al Aldo oscuro 
+            de la fuerza eran Sith. Ambos lados usan el sable de luz como arma pero usaban colores diferentes. Los del lado luminoso usan 
+            sables de color verde, azul o morado y los del lado oscuro usan rojo.
+        </p>
+    </section>
+</div>
+
+<footer id="footer">
+
+
+    <div class="footer__social footer__section">
+       
+       
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            
+            <div class="social_network">
+                <span class="social_icon-container"><i class="lni lni-github"></i></span>
+                <span class="social_icon-handler"><a href="https://github.com/baby-loz" target="_blank"> Barbara Lozano</a></span>
+            </div>
+            
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-instagram-original"></i></span>
+                <span class="social_icon-handler"><a href="ehhh_no.html" target="_blank"> Barbara Lozano</a></span>
+            </div>
+
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-twitter"></i></span>
+                <span class="social_icon-handler"><a href="ehhh_no.html" target="_blank"> Barbara Lozano</a></span>
+
+            </div>
+        
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electrónico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <ul>
+            <li><a href="no_tengo.html" target="_blank">Sitio 1</a></li>
+            <li><a href="no_tengo.html" target="_blank">Sitio 2</a></li>
+            <li><a href="no_tengo.html" target="_blank">Sitio 3</a></li>
+            <li><a href="no_tengo.html" target="_blank">Sitio 4</a></li>
+            <li><a href="no_tengo.html" target="_blank">Sitio 5</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
